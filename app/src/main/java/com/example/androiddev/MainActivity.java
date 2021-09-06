@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this, "Logged in Successful", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(MainActivity.this, WelcomeActivity.class));
                         } else {
-                            Toast.makeText(MainActivity.this, "Login Error", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
