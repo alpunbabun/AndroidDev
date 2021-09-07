@@ -104,8 +104,10 @@ public class MainActivity extends AppCompatActivity {
                         if (task.isSuccessful()){
                             Toast.makeText(MainActivity.this, "Logged in Successful", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(MainActivity.this, WelcomeActivity.class));
+                            pbLoading.setVisibility(View.GONE);
                         } else {
                             Toast.makeText(MainActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
+                            pbLoading.setVisibility(View.GONE);
                         }
                     }
                 });
